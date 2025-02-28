@@ -39,7 +39,7 @@ class BinarySearchTree:
                 self.filter_range(node.right, min_price, max_price, result)
         return result
 
-# Khởi tạo BST và chèn dữ liệu
+
 tree = BinarySearchTree()
 iphones = [
     {"price": 3000, "name": "iphone 12"},
@@ -52,6 +52,5 @@ iphones = [
 for iphone in iphones:
     tree.insert(iphone["price"], iphone["name"])
 
-# In ra danh sách các sản phẩm có giá từ 3000 đến 5000
 iphone_list = tree.filter_range(tree.root, 3000, 5000)
 print("iphone_list =", iphone_list)

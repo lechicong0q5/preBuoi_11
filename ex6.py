@@ -61,7 +61,7 @@ class BinarySearchTree:
             print(f"{node.name}: {node.price}")
             self.inorder_traversal(node.right)
 
-# Khởi tạo BST và chèn dữ liệu
+
 tree = BinarySearchTree()
 iphones = [
     {"price": 3000, "name": "iphone12"},
@@ -74,10 +74,10 @@ iphones = [
 for iphone in iphones:
     tree.insert(iphone["price"], iphone["name"])
 
-# In cây BST dưới dạng JSON
+
 tree.print_tree()
 
-# Tìm kiếm giá trị trong BST
+
 search_price = 4000
 result = tree.search(search_price)
 if result:
@@ -85,6 +85,6 @@ if result:
 else:
     print("Không tìm thấy giá trị trong cây BST")
 
-# Duyệt cây theo thứ tự in-order
+
 print("\nDuyệt cây theo thứ tự In-order:")
 tree.inorder_traversal(tree.root)

@@ -55,7 +55,7 @@ class BinarySearchTree:
         tree_dict = self.to_dict(self.root)
         print(json.dumps(tree_dict, indent=2))
 
-# Khởi tạo BST và chèn dữ liệu
+
 tree = BinarySearchTree()
 iphones = [
     {"price": 3000, "name": "iphone12"},
@@ -68,10 +68,10 @@ iphones = [
 for iphone in iphones:
     tree.insert(iphone["price"], iphone["name"])
 
-# In cây BST dưới dạng JSON
+
 tree.print_tree()
 
-# Tìm kiếm giá trị trong BST
+
 search_price = 4000
 result = tree.search(search_price)
 if result:
